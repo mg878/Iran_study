@@ -2,13 +2,13 @@
 % cases and deaths for Iran, the US, and the UK and comparing to the 
 % Benford distribution to examine irregularities in data
 
-clear; close all
+clear; %close all
 
 %% data of reported cases and reported deaths for Iran, the US, and the UK
 data = struct('ind',{[],[],[]});
 
 iran_case = [2,5,18,29,43,61,95,139,245,388,593,978,1501,2336,2922,3513,4747,5823,6566,7161,8042,9000,10075,11364,12729,13938,14991,16169,17361,18407,19644,20610,21638,23049,24811,27017,29406,32332,35408,38309,41495,44605,47593]; % Iran reported cases from Feb19 to Apr1
-iran_death = [2,2,4,6,8,12,16,19,26,34,43,54,66,77,92,108,124,145,194,237,291,354,429,514,611,724,853,988,1135,1284,1433,1556,1685,1812,1934,2077,2234,2378,2517,2640,2757,2898,3036,3160,3294,3452,3603,3739,3872,3993,4110,4232]; % Iran reported deaths from Feb19 to Apr10
+iran_death = [2,2,4,6,8,12,16,19,26,34,43,54,66,77,92,108,124,145,194,237,291,354,429,514,611,724,853,988,1135,1284,1433,1556,1685]; % Iran reported deaths from Feb19 to Mar22
 iran_data = [iran_case iran_death]; % combining total reported cases and deaths into one larger data set
 
 us_case = [15,15,35,35,35,53,57,60,60,63,68,75,100,124,158,221,319,435,541,704,994,1301,1630,2183,2771,3617,4604,6357,9317,13898,19551,24418,33840,44189,55398,68905,86379,105217,124788,144980,168177,193353,220295]; % US reported cases from Feb19 to Apr1
@@ -25,7 +25,7 @@ data(3).ind = uk_data;
 
 
 %% begin sampling of data and counting the frequency of first digits
-loops = 5; %number of times we sample the data
+loops = 40; %number of times we sample the data
 num = 40; %size of sample
 
 firstdig_stat = zeros(loops,9,size(data,2));
