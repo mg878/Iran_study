@@ -3,28 +3,24 @@ M. Ghafari et al.: Ongoing outbreak of COVID-19 in Iran: challenges and signs of
 
 ## Codes
 
-`Benford.m`: contains the script and data for Benford's Law (BL) analysis
+`Benford.m`: MATLAB code and data for Benford's Law (BL) analysis
 
-`Beta_Binomial.m`: this script computes a maximum likelihood estimate for the COVID-19 outbreak size in Iran based on a Beta-Binomial distribution.
+`MLE_Estimate.m`: MATLAB code that computes the maximum likelihood estimate of the outbreak size.
 
-`MLE_Estimate.m`: this script computes a maximum likelihood estimate for the COVID-19 outbreak size in Iran based on a Binomial distribution.
-
-`mrgint.m`: this script computes a marginal integral of the Beta distribution
-
-`excess_mortality.nb`: contains the script and data for excess mortality of provinces during winter 2019-20 with respect to the 5-year average of each province
-
-`Burden_on_hospitals.nb`: contains the script and data for SEIR model of the epidemic using Neher et al. model
+`excessDeaths_analysis.R`: R code for excess mortality analysis.
 
 ## Data
 
-`Flight information.xlsx`: this file contains all the flight information to estimate number of passengers from various countries to 4 of the largests airports in Iran (Tehran, Isfahan, Shiraz, and Mashhad)
+`Genome_metadata.xlsx`: this contains the metadata from GISAID used for the phylogenetic analysis
 
-`GISAID_metaData.xlsx`: contains metadata from GISAID used for phylogenetic analysis
+`Reported_cases&deaths.xlsx`: this includes a time series data (obtained from the Johns Hopkins Coronavirus Resource Center) for the number of confirmed cases and deaths in Iran, UK, US, France, Italy, and Spain as well as daily confirmed cases in Guangdong, Shanghai, Beijing, and Hubei.
 
-`Province_cases.xlsx`: contains number of COVID-19 cases per province in Iran from Feb 19 to Mar 22 (data used to generate fig 1a)
+`Province_cases.xlsx`: this contains the number of provincial confirmed cases in Iran from Feb 19 to Mar 22.
 
-`Province_data_excess_mortality.xlsx`: contains number of registered deaths in winter from 2015-16 to 2019-20 in Iran.
+`Number_of_passengers.xlsx`: this includes the flight information from 4 of the largests airports in Iran (Tehran, Isfahan, Shiraz, and Mashhad) to countries with detected cases from Iran (UAE, Lebanon, China, Kuwait, and UAE) and also contains information regarding approximate aircraft capacities per flight.
 
-`Province_population.xlsx`: contains census data (collected in 2016) for province populations
+`Iran_data.xlsx`: this includes the daily number of confirmed cases (outpatients and hospitalised), deaths, and tests taken.
 
-`case and infection fatality ration analysis.xlsx`: this file contains a detailed analysis of how case and infection fatality ratios is calculated 
+`Catchment_population.xlsx`: this includes the provincial population size (including those from the catchment population of the airports highlighted in yellow boxes) based on the 2016 national census.
+
+`simulation_results.xlsx`: this includes a detailed output of our SEIR modelling (exported from covid19-scenarios.org dashboard). The file includes dates, confirmed weekly cases, confirmed weekly deaths, effective reproduction number, severe cases, exposed individuals, infectious individuals, severely ill individuals (hospitalised), individuals in the ICU, weekly fatalities, cumulative recovered, and cumulative fatalities with their corresponding 95% CI (upper and lower bounds). 
