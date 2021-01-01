@@ -24,3 +24,7 @@ M. Ghafari et al.: Ongoing outbreak of COVID-19 in Iran: challenges and signs of
 `Catchment_population.xlsx`: this includes the provincial population size (including those from the catchment population of the airports highlighted in yellow boxes) based on the 2016 national census.
 
 `simulation_results.xlsx`: this includes a detailed output of our SEIR modelling (exported from covid19-scenarios.org dashboard). The file includes dates, confirmed weekly cases, confirmed weekly deaths, effective reproduction number, severe cases, exposed individuals, infectious individuals, severely ill individuals (hospitalised), individuals in the ICU, weekly fatalities, cumulative recovered, and cumulative fatalities with their corresponding 95% CI (upper and lower bounds). 
+
+`Iran_seqs_removed.xml`: this includes the BEAST v1.10 XML file for the phylogenetic analysis.
+
+`Iran_seqs_removed.log`: this includes the log file, output of the BEAST simulation.
