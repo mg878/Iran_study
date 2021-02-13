@@ -11,20 +11,24 @@ M. Ghafari et al.: Ongoing outbreak of COVID-19 in Iran: challenges and signs of
 
 ## Data
 
-`Genome_metadata.xlsx`: this contains the metadata from GISAID used for the phylogenetic analysis
+`Data_S1.xlsx`: this contains the metadata from GISAID used for the phylogenetic analysis
 
-`Reported_cases&deaths.xlsx`: this includes a time series data (obtained from the Johns Hopkins Coronavirus Resource Center) for the number of confirmed cases and deaths in Iran, UK, US, France, Italy, and Spain as well as daily confirmed cases in Guangdong, Shanghai, Beijing, and Hubei.
+`Data_S2.xlsx`: this includes a time series data for the number of confirmed cases and deaths in Iran (including the 31 provinces), UK, US, France, Italy, and Spain as well as daily confirmed cases in Guangdong, Shanghai, Beijing, and Hubei.
 
-`Province_cases.xlsx`: this contains the number of provincial confirmed cases in Iran from Feb 19 to Mar 22.
+`Data_S3.xlsx`: this includes a detailed list of all flights from airports in Tehran, Isfahan, Shiraz, and Mashhad to Oman, UAE, Kuwait, Lebanon, and China. The list also includes flight numbers which enables us to find the approximate seating capacity based on aircraft model.
 
-`Number_of_passengers.xlsx`: this includes the flight information from 4 of the largests airports in Iran (Tehran, Isfahan, Shiraz, and Mashhad) to countries with detected cases from Iran (UAE, Lebanon, China, Kuwait, and UAE) and also contains information regarding approximate aircraft capacities per flight.
+`Data_S4.xlsx`: this includes the approximate population of 17 provinces that use the 4 airports in Iran for international travels.
 
-`Iran_data.xlsx`: this includes the daily number of confirmed cases (outpatients and hospitalised), deaths, and tests taken.
+`Data_S5.xlsx`: this includes a detailed output of our SEIR modelling (exported from covid19-scenarios.org dashboard). The file includes dates, confirmed weekly cases, confirmed weekly deaths, effective reproduction number, severe cases, exposed individuals, infectious individuals, severely ill individuals (hospitalised), individuals in the ICU, weekly fatalities, cumulative recovered, and cumulative fatalities with their corresponding 95% CI (upper and lower bounds).
 
-`Catchment_population.xlsx`: this includes the provincial population size (including those from the catchment population of the airports highlighted in yellow boxes) based on the 2016 national census.
+`BEAST_Iran.xml`: this includes the XML input file for the phylogenetic analysis of the TMRCA/doubling time of the returned travellers' clade using the genomes we collected from Iran and 20 additional genomes from returned travellers.
 
-`simulation_results.xlsx`: this includes a detailed output of our SEIR modelling (exported from covid19-scenarios.org dashboard). The file includes dates, confirmed weekly cases, confirmed weekly deaths, effective reproduction number, severe cases, exposed individuals, infectious individuals, severely ill individuals (hospitalised), individuals in the ICU, weekly fatalities, cumulative recovered, and cumulative fatalities with their corresponding 95% CI (upper and lower bounds). 
+`BEAST_Iran.log`: this includes the output log file of BEAST v1.10 for the `BEAST_Iran.xml` dataset.
 
-`Iran_seqs_removed.xml`: this includes the BEAST v1.10 XML file for the phylogenetic analysis.
+`BEAST_WholeClade.xml`: this includes the XML input file, using the entire dataset of genomes from inside Iran that belong to the returned travellers' clade, for the phylogenetic analysis (*data not shown in the paper*).
 
-`Iran_seqs_removed.log`: this includes the log file, output of the BEAST simulation.
+`BEAST_WholeClade.log`: this includes the output log file of BEAST v1.10 for the `BEAST_WholeClade.xml` dataset (*data not shown in the paper*).
+
+`RAxML_bootstrap_World.tree`: this includes the maximum likelihood tree with 100 bootstrap values for the globally representative sample of 802 genomes.
+
+`MAP_BEAST.tree`: this includes the maximum a posteriori tree (MAP) of the BEAST analysis using the `BEAST_Iran.xml` dataset.
