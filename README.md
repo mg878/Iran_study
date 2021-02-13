@@ -1,5 +1,5 @@
 # Iran_study
-M. Ghafari et al.: Ongoing outbreak of COVID-19 in Iran: challenges and signs of concern with under-reporting of prevalence and deaths
+M. Ghafari et al.: Lessons for preparedness and reasons for concern from the early COVID-19 epidemic in Iran
 
 ## Codes
 
